@@ -28,8 +28,8 @@ num.forEach((element)=>{
  //for of loop
  for(let i of arr){
     console.log(i)  //H a r r y
+    
  }
-
  //for in loop
 
  for (const key in arr) {
