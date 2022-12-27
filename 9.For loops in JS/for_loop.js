@@ -7,7 +7,6 @@
 const PromptSync = require("prompt-sync");
 const prompt = PromptSync()
 let sum = 0
-let ss = PromptSync
 let n = prompt("Enter n: ")
 n = Number.parseInt(n)
 for (let i = 0; i < n; i++) {
