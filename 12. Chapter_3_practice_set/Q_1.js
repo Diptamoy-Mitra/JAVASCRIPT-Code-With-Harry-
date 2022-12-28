@@ -1,4 +1,4 @@
-//write a program to print the marks of a student in an object using fo loop
+//write a program to print the marks of a student in an object using for loop
 
 //obj ={harry:98, rohan:90, kaberi: 68}
 
