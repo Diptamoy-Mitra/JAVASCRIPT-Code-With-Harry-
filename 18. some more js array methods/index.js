@@ -9,7 +9,7 @@ console.log(num.length) //9  //so array length doesn't change ,but value delete
 
 //concat methods(doesn't change main array)
 let num_more=[11,12,13,14,15,16,17,18,19]
-let newArray=num.concat.apply(num_more)
+let newArray=num.concat(num_more)
 console.log(newArray)  // [ 11, 12, 13, 14, 15, 16, 17, 18, 19]
 let num_even_more=[211,212,213,214,415,416,417,418,419]
 let n=num.concat(num_more, num_even_more) 
