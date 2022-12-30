@@ -10,4 +10,4 @@ console.log(arr) //(4) [text, div, text, script]
 // for (const iterator of arr) {
 //     console.log(iterator)
 // }
-console.log(document.hasChildNodes())  //true
+console.log(document.hasChildNodes())  //true 
