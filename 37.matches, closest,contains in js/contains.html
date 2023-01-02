@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box" id="id1">This is an element <span id="sp1">Span1</span> </div>
+  <div class="box" id="id2">This is an element</div>
+
+  <script>
+     let id1 = document.getElementById('id1')
+     let sp1=document.getElementById('sp1')
+    console.log(id1.contains(sp1)) //true
+    console.log(sp1.contains(id1)) //false
+  </script>
+</body>
+
+</html>
+
+<!-- elem.contains(elem1) --- returns true if elem1 is inside elem (a descendent of elem1) or when elem1==elem  -->
