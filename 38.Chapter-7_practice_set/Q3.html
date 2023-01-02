@@ -1,0 +1,52 @@
+<!-- create an element with 3 children , now change the color of first and last element to green  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 3</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+
+    }
+
+    nav {
+      display: flex;
+      background-color: rgb(171, 190, 190);
+    }
+
+    nav li {
+      list-style: none;
+      padding: 0 23px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact Us</li>
+  </nav>
+
+
+  <script>
+      document.getElementsByTagName('nav')[0].firstElementChild.style.color = "yellow"
+      document.getElementsByTagName('nav')[0].lastElementChild.style.color = "green"
+
+  </script>
+
+</body>
+
+</html>
