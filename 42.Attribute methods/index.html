@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute methods</title>
+</head>
+<body>
+  <div id="first" class="hey" >Hey i am 1st container</div>
+
+  <script>
+    let first=document.getElementById('first')
+    let a=first.getAttribute("class")  //show attribute value   //hey
+    console.log(a)
+
+    console.log(first.hasAttribute("class")) //true    //method to check for existence of an attribute
+    console.log(first.hasAttribute("style"))   //false
+    // first.setAttribute("hidden", "true")  //lekha ta ure jbe
+    first.setAttribute("class", "true sachine") //<div id="first" class="true sachine">Hey i am 1st container</div>
+    // first.removeAttribute("class")   //remove class attribute   //<div id="first">Hey i am 1st container</div>
+
+    console.log(first.attributes)  // NamedNodeMap {0: id, 1: class, id: id, class: class, length: 2}
+
+
+
+
+  </script>
+</body>
+</html>

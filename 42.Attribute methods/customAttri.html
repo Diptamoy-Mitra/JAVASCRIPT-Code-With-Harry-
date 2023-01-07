@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute methods</title>
+</head>
+<body>
+  <div id="first" class="hey" data-game="mario" data-player="harry">Hey i am 1st container</div>
+
+  <script>
+    let first=document.getElementById('first')
+    console.log(first.dataset)   
+            //output below 
+      // DOMStringMap
+      //   game: "mario"
+      //   player: "harry"
+      //  [[Prototype]]: DOMStringMap
+
+
+      console.log(first.dataset.player)  //harry
+
+
+
+  </script>
+</body>
+</html>
