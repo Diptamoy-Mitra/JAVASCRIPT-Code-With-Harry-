@@ -1,0 +1,31 @@
+<!-- Write a Js program to keep fetching contents of a website(every 5 secs) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question 4</title>
+</head>
+<body>
+  
+    <h1>Display Here</h1>
+  <script>
+
+    // let a=document.getElementsByTagName('h1');
+    const fetchContent= async (url) =>{
+      con= await fetch(url);
+      let b=await con.json();
+      
+      return b;
+    }
+    setInterval(async function(){
+      let url="https://jsonplaceholder.typicode.com/todos/1"
+      let x=await fetchContent(url)
+      console.log(x) 
+    },3000)
+
+  </script>
+</body>
+</html>
