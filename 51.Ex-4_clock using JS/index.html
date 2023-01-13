@@ -1,0 +1,67 @@
+<!-- Clock build using JS setInterval and Date() -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      height: 50vw;
+      width: 80vw;
+      margin: auto;
+      background-color: rgb(206, 206, 172);
+      margin-top: 10vw;
+      border-radius: 20px;
+    }
+
+    .clock,
+    .date {
+      display: flex;
+    
+      width: 40vw;
+      height: 9vw;
+      font-size: 40px;
+      margin: auto;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width:700px) {
+      .cont {
+        height: 60vw;
+        width: 40vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="clock">
+      <div id="hour"></div>
+      <div id="minute"></div>
+      <div id="second"></div>
+    </div>
+
+    <div class="date">
+      <div id="day"></div>
+      <div id="month"></div>
+      <div id="year"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
