@@ -36,7 +36,7 @@
 
 //time  calculation
 console.time("forLop")
-for(let i=0;i<5;i++){
+for(let i=0;i<500;i++){
     console.log(233)
 }
 console.timeEnd("forLop") //forLop: 0.880859375 ms

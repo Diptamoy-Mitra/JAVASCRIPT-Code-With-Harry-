@@ -8,7 +8,7 @@ btn.addEventListener('click', function(e){
 let a=prompt("what is your favorite no: ")
 if(a=="2")
 {
-  btn.removeEventListner('click', function(e){
+  btn.removeEventListener('click', function(e){
     alert("Hi")
   })
 }
