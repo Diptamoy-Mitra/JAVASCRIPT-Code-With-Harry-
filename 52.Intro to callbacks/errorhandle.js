@@ -1,8 +1,8 @@
-
+//A callback function is a function passed into another function as an argument,which is then invoked inside the outer function
+//to complete an action
 function loadScript(src ,callback){
   let script=document.createElement('script')
   script.src=src;
- //  script.onload=()=>callback(script)
 
  script.onload=function(){
    console.log("loaded SRC: "+src)

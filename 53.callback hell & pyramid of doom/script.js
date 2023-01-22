@@ -5,7 +5,7 @@ function loadScript(src, callback) {
 
   script.onload = function () {
     console.log("loaded SRC: " + src)
-    callback(true, src);   //bhul kre chintu true kre diloooo
+    callback(true, src);
   }
 
   script.onerror = function () {
@@ -57,4 +57,3 @@ loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstra
     })
   })
 })
-//chintu
