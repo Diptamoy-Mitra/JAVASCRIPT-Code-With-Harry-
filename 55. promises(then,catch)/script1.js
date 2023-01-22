@@ -23,8 +23,6 @@ console.log(p1,p2)
 p1.then((value)=>{
   console.log(value)  //true
 })
-
-
 //to catch the error
 // p2.catch((error)=>{
 //   console.log("Some error occur at p2")
@@ -32,6 +30,8 @@ p1.then((value)=>{
 
 
 
+
+//output 
 // Promise is pending.........
 // script1.js:10 Promise is pending.........
 // script1.js:18 Promise {<pending>} Promise {<pending>}
