@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "prompt-sync": "^4.2.0",
-    "prompts": "^2.4.2"
-  }
-}
