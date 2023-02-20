@@ -1,14 +1,14 @@
-let promise=new Promise(function(resole, reject){
-  alert("hello")
-  resolve(56)
+let promise=new Promise(function(resolve, reject){
+  alert("hello..............")
+  resolve(56);
 })
 
-console.log("hello 1")
+console.log("hello 1")  //1st print it
 setTimeout(function(){
-  console.log("Hello two in 2 sec.")
+  console.log("Hello two in 2 sec.")  //4th print it
 },2000)
-console.log("My name is: "+ "hello 3");
-console.log(promise)
+console.log("My name is: "+ "hello 3"); //2nd print it
+console.log(promise) //3rd print it
 
 
 
