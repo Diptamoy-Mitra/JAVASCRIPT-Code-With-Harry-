@@ -1,8 +1,8 @@
 let p1= new Promise((resolve, reject)=>{
-  console.log("Promise is pending 1.........")
+  console.log("Promise is pending 1.........") //1st print
   setTimeout(() => {
-       console.log("I am a promise and i am a fulfilled")
-       resolve(true)
+       console.log("I am a promise and i am a fulfilled")   //4th print
+       resolve(true) 
       
   }, 5000);
 })
@@ -11,7 +11,7 @@ let p1= new Promise((resolve, reject)=>{
 
 
 let p2= new Promise((resolve, reject)=>{
-  console.log("Promise is pending 2.........")
+  console.log("Promise is pending 2.........") //2nd print
   setTimeout(() => {
      
       console.log("I am a promise and i am a rejected")
@@ -20,13 +20,13 @@ let p2= new Promise((resolve, reject)=>{
   }, 5000);
 })
 
-console.log(p1,p2) 
+console.log(p1,p2)  //3rd print
 
 
 
 //to get the value
 p1.then((value)=>{
-  console.log(value)  //true
+  console.log(value)  //true   //5th print
 })
 //to catch the error
 // p2.catch((error)=>{
@@ -46,5 +46,5 @@ p1.then((value)=>{
 p2.then((value)=>{
   console.log("hi......"+value)
 },(error)=>{
-  console.log(error)
+  console.log(error)  //6th print
 })

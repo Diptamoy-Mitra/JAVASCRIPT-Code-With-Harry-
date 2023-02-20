@@ -13,27 +13,28 @@
   <script>
     let p1 = new Promise((resolve, reject) => {
 
-      alert("Hey I am not resolves")
+      alert("Hey I am not resolves") //1st
       setTimeout(() => {
         resolve(1)
       }, 2000);
     })
 
-    p1.then(() => {
-      console.log("congratulations this promise is now resolves.....");
+    p1.then((value) => {
+      console.log(value) //2nd
+      console.log("congratulations this promise is now resolves.....");  //3rd
     })
     p1.then(() => {
-      console.log("Hurray....")
+      console.log("Hurray....") //4th
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve(4)
         }, 6000);
       })
     }).then((value) => {
-      console.log(value)
+      console.log(value) //6th
     })
     p1.then(() => {
-      console.log("congratulations this promise is now resolves");
+      console.log("congratulations this promise is now resolves"); //5th
     })
 
 

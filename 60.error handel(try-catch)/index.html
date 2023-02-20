@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Try-catch | error handelling</title>
+</head>
+<body>
+  
+
+  <script>
+    setTimeout(() => {
+      console.log("Hacking wifi............please wait");
+    }, 1000);
+
+    // console.log(rahul)    //baki code cholbe na ekhane galti hole
+
+    //resolve process
+    try{
+      // console.log(rahul)
+      setTimeout(() => {
+        //try catch won't catch it because it executed later 
+        console.log(rahul)
+      }, 10000);
+    }
+    catch(error){
+      console.log("Balle balle  "+error)   //Balle balle  ReferenceError: rahul is not defined
+    }
+    setTimeout(() => {
+      console.log("fetching username and password............please wait");
+      // console.log("rahul")    //code kintu cholbe
+    }, 2000);
+    setTimeout(() => {
+      console.log("rahuls wifi............please wait");
+    }, 3000);
+    setTimeout(() => {
+      console.log("username and password of rahul(87277823767)............please wait");
+    }, 4000);
+
+
+   
+  </script>
+</body>
+</html>

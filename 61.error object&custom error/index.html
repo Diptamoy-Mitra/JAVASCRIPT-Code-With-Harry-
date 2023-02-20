@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>custom error & error object</title>
+</head>
+
+<body>
+
+  <script>
+    const PromptSync = require("prompt-sync");
+    let prompt=PromptSync()
+    try {
+      let age=prompt("enter your age: ")
+      age=Number.parseInt(age)
+      if(age>120){
+        throw new Error("this is probably not true......")
+      }
+      
+    } catch (error) {
+      console.log(error.name)
+      console.log(error.message)
+      console.log(error.stack)
+
+    }
+    console.log("script still running...............")
+  </script>
+</body>
+
+</html>
