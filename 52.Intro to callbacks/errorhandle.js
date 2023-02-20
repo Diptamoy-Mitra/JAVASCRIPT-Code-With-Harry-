@@ -19,7 +19,7 @@ function loadScript(src ,callback){
 
 }
 function hello(error,src){
-  if(error){
+  if(error){   //if error present then run
     console.log(error)
     return;
   }

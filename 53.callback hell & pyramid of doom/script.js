@@ -36,22 +36,22 @@ function hello(error, src) {
 //     alert("Goodmorning function run    "+src);
 // }
 loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js", function goodmorning(error, src) {
-  if (errror) {
+  if (error) {
     console.log(error)
-    sendEmergencyMessageToCeo();
+   // sendEmergencyMessageToCeo();
     return;
   }
   // alert("Goodmorning function run    "+src);
   loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js", function goodmorning(error, src) {
     if (errror) {
       console.log(error)
-      sendEmergencyMessageToCeo();
+      //sendEmergencyMessageToCeo();
       return;
     }
     loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js", function goodmorning(error, src) {
-      if (errror) {
+      if (error) {
         console.log(error)
-        sendEmergencyMessageToCeo();
+       // sendEmergencyMessageToCeo();
         return;
       }
     })
