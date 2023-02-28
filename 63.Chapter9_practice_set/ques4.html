@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    let p1=async()=>{
+      return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+          resolve(10)
+        }, 2000);
+      }) 
+    }
+    let p2=async()=>{
+      return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+          resolve(20)
+        }, 1000);
+      }) 
+    }
+    let p3=async()=>{
+      return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+          resolve(30)
+        }, 3000);
+      }) 
+    }
+
+
+    const run= async ()=>{
+      // slow take 6 sec
+      // console.time("run")
+      // let a1=await p1();  //fetch first 10 products
+      // let a2=await p2();  //fetch another 10 products
+      // let a3=await p3();  //fetch another10 products
+      // console.log(a1, a2 ,a3)
+      // console.time("end")
+
+
+
+
+      //fast take 3 sec , all are running parrallely
+      console.time("run")
+      let a1= p1();  //fetch first 10 products
+      let a2= p2();  //fetch another 10 products
+      let a3= p3();  //fetch another10 products
+      console.log(await Promise.all(a1,a2,a3))  //run parrallely
+      console.time("end")
+
+    }
+  </script>
+</body>
+</html>
