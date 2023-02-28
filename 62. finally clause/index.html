@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finally clause</title>
+</head>
+
+<body>
+
+
+  <script>
+    const f = () => {
+      try {
+        let a = 0;
+        // console.log(program)
+        console.log("This is successful ")
+        return;
+      }
+      catch (err) {
+        console.log("This is an error ")
+        console.log(p)  //catch ka aandaar bhi error 
+      }
+      finally {
+        console.log("This is finally clause ")   //always run it doesn't matter error or not
+      }
+    }
+  
+      f();
+
+  </script>
+</body>
+
+</html>
