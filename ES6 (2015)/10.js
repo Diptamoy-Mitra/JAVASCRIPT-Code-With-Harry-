@@ -16,3 +16,31 @@
 
 // });
 
+
+
+
+
+
+
+
+
+//promises example
+
+
+function login() {
+  return new Promise((resolve,reject) => {
+    setTimeout(() => {
+      console.log('Login............')
+      resolve();
+      // reject();
+
+    }, 100);
+  })
+
+}
+
+login().then(()=>{
+  console.log('Redirecting..')
+}).catch((err)=>{
+  console.log('Error..........')
+})
