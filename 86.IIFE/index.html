@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIFE</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <script>
+    let a = () => {
+     return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(456);
+        }, 4000);
+      });
+    }
+
+    // let b= await a;   // faced error out side async loop
+    // let c= await a;
+    // let d= await a;
+    // console.log(b,c,d);
+
+    //Normal method
+    // let f = async () => {
+    //   let b = await a();
+    //   console.log(b);
+    //   let c = await a();
+    //   console.log(c);
+    //   let d = await a();
+    //   console.log(d);
+    // }
+    // f();
+
+
+
+    //IIFE method (used avoid polluting  global namespace)
+    (async () => {
+      let b = await a();
+      console.log(b);
+      let c = await a();
+      console.log(c);
+      let d = await a();
+      console.log(d);
+    })()
+    
+// console.log(d)   //error
+
+  </script>
+</body>
+
+</html>
