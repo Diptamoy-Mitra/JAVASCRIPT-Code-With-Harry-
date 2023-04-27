@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOCAL & GLOBAL</title>
+</head>
+<body>
+  
+  <!-- let and const block level scope,var global -->
+  <script>
+    // {
+    //   let a=33;
+    // }
+    // console.log(a) //error
+  let p=9
+    function ax(){
+      let a=7;
+      console.log(a); //7
+      console.log(p);//9  //globally defined
+    }
+    ax();
+    // console.log(a) //face error cause a is function level scope
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hoisting</title>
+</head>
+<body>
+  
+  <!-- declaration hoisted in top but initialization is not -->
+  <!-- function expression are not hoisted -->
+  <script>
+    console.log(a) //undefined  //but not faced error
+    greet();
+    function greet(){
+      console.log("good "); //print this
+    }
+    var a=2;
+    console.log(a) ;  //2
+
+    // console.log(b) //Uncaught ReferenceError: Cannot access 'b' before initialization
+    // let b;
+    // console.log(b) 
+  </script>
+</body>
+</html>
