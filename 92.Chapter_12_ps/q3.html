@@ -1,0 +1,33 @@
+<!-- Js function which resolves a promise after n seconds. the function takes n as the parameter. Use IIFE to execute the function with different
+values of n -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+     const a = async (text,n=2) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(text)
+        }, 2000*n);
+      })
+    }
+
+    //IIFE
+    (
+      async () => {
+        let x = await a("Hello resole after 1sec",1);
+        console.log(x)
+        x = await a("World ! resole after 4sec ",4);
+        console.log(x)
+      }
+    )()   
+  </script>
+</body>
+</html>

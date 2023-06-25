@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>closers</title>
+</head>
+<body>
+  
+
+  <script>
+    message="Good Global"
+    function hello1(){
+      let message='Good Morning';
+      //{
+        // let message="Good Afternoon"
+       // console.log("Hello 1 "+message)   //Hello 1 Good Afternoon
+
+     // }
+      //console.log(message)  //Good Morning
+      console.log("Hello 1 "+message) //Hello 1 Good Morning
+      let c=function hello2(){
+        console.log("I am c "+message) //I am c Good Morning
+      }
+      return c;
+    }
+   c=hello1();
+   c()
+  </script>
+</body>
+</html>

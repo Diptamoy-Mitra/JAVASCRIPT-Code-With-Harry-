@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrow function</title>
+</head>
+<body>
+  
+  <script>
+    const sayHello=(name,greet)=>{
+      console.log("Hello World! "+name +" "+greet)
+    }
+    const x={
+      name: "Haryy",
+      role:"Cse",
+      exp: 30,
+      show: function(){
+        // console.log(`The name is ${this.name}\n the role is ${this.role}`);   //The name is Haryy     the role is Cse
+        //let that=this;   //if use that instead of this in under func. then o/p show correctly
+        setTimeout(function() {
+          console.log(`The name is ${this.name}\n the role is ${this.role}`) //The name is        the role is undefined   //here this window object
+ 
+        }, 1000);
+      }
+    }
+    sayHello("Harry", "good morning")
+    // console.log(x.name, x.exp)
+    x.show()
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+write js to print following after 2 sec delay "Hello World "
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q1</title>
+</head>
+
+<body>
+
+  <script>
+    const a = async (text) => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          resolve(text)
+        }, 2000);
+      })
+    }
+
+    //IIFE
+    (
+      async () => {
+        let x = await a("Hello");
+        console.log(x)
+        x = await a("World !");
+        console.log(x)
+      }
+    )()
+  </script>
+</body>
+
+</html>
