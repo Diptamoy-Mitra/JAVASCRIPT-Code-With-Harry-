@@ -7,5 +7,5 @@ let obj={
     shiv:77
 }
 for (let a in obj) {
-   console.log("Marks of "+a+ " are: "+obj[a])
+   console.log("Marks of "+a+ " are: "+obj[a]);
 }

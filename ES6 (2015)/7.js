@@ -21,5 +21,5 @@ console.log(settings.volume)   //20
 
 
 //by value copy
-const newSet={...settings,volume:60}
+const newSet={...settings,volume:60} //{ volume: 60, brightness: 80 }
 console.log(newSet)

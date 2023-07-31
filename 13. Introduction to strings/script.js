@@ -17,4 +17,4 @@ console.log(sentence)
 
 //escape sequence
 let fruit='BANA\'NA'
-console.log(fruit)
+console.log(fruit);
